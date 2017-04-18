@@ -5,9 +5,9 @@ I have created this script to use it on BNG, as, at present time (15.1), DCU is 
 
 Installation
 ------------
-1. Install JunOS PyEZ library, please, use official documentation - https://www.juniper.net/techpubs/en_US/junos-pyez2.0/topics/task/installation/junos-pyez-server-installing.html .
-2. Enable **netconf** on Juniper device, please, use official documentation - https://www.juniper.net/techpubs/en_US/junos-pyez2.0/topics/task/installation/junos-pyez-client-configuring.html
-3. Create ssh keys and account on Juniper host, please, use official documentation - https://www.juniper.net/techpubs/en_US/junos-pyez2.0/topics/task/program/junos-pyez-authenticating-users-with-ssh-keys.html .
+1. Install JunOS PyEZ library, please, [use official documentation](https://www.juniper.net/techpubs/en_US/junos-pyez2.0/topics/task/installation/junos-pyez-server-installing.html).
+2. Enable **netconf** on Juniper device, please, [use official documentation](https://www.juniper.net/techpubs/en_US/junos-pyez2.0/topics/task/installation/junos-pyez-client-configuring.html)
+3. Create ssh keys and account on Juniper host, please, [use official documentation](https://www.juniper.net/techpubs/en_US/junos-pyez2.0/topics/task/program/junos-pyez-authenticating-users-with-ssh-keys.html).
 4. Download script, modify it to yours needs and **run**.
 
 ### Requirements
