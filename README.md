@@ -1,7 +1,7 @@
 # junos-pyez-prefix-list
 create prefix-list from BGP routes with some attributes (community in example)
 
-I have created this script to use it on BNG, as, at present time (15.1), DCU is not supported in dynamic profiles, though, SCU does.
+I have created this script to use it on Juniper BRAS to classify traffic from clients to peering in dynamic profiles, as, at present time (15.1), DCU is not supported in dynamic profiles, though, SCU does.
 
 Installation
 ------------
