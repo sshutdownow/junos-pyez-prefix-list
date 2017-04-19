@@ -1,7 +1,7 @@
 # junos-pyez-prefix-list
-create prefix-list from BGP routes with some attributes (community in example)
+create prefix-list from BGP routes filtered by some attributes (community in example)
 
-I have created this script to use it on Juniper BRAS to classify traffic from clients to peering in dynamic profiles, as, at present time (15.1), DCU is not supported in dynamic profiles, though, SCU does.
+I have created this script to use it on Juniper BRAS to classify traffic from clients to peering in dynamic profiles, as, at present time (15.1), DCU is not supported in dynamic profiles, though, SCU does. Route summarization is used to lower number of records in prefix-list as it is intended to use in firewall. 
 
 Installation
 ------------
