@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+from netaddr import *
 from jinja2 import Template
 from jnpr.junos import Device
 from jnpr.junos.utils.config import Config
@@ -46,7 +47,15 @@ prefixlist:
         tblrt = RouteTable(dev)
 
         tblrt.get(table='RI-PPPoE-INET.inet.0', community_name='community-city')
+        ip_list = []
         for route_item in tblrt.keys():
+            ip_list.append(IPNetwork(route_item))
+
+        # summarize groups of IP subnets and addresses,
+        # merging them together where possible to create the smallest possible list of CIDR subnets
+        ip_list = cidr_merge(ip_list)
+
+        for route_item in ip_list:
             yaml_plkanet += "\n    - " + str(route_item)
 
         pl_config = yaml.load(yaml_plkanet)
